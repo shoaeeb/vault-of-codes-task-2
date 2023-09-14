@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Element</title>
+  </head>
+  <body>
+    <button onclick="toggleElement()">Toggle Element</button>
+    <!-- the code that was given -->
+    <!-- <div id="target" style="display: none">This is the target element.</div> -->
+
+    <!-- corrected code -->
+    <div id="target" style="display: block">This is the target element.</div>
+
+    <script>
+      function toggleElement() {
+        var element = document.getElementById("target");
+        element.style.display =
+          element.style.display === "none" ? "block" : "none";
+      }
+    </script>
+
+    <!-- Eplanation -->
+    <!-- In the previous we were setting the inline style of the target element to be disply:none; which was
+     okay it was working fine , but the actually it depends on the requirement whether we want to see the 
+    target element to be visible first then we want to toggle the visibility -->
+
+    <!-- Corrected One -->
+    <!-- I just changed the target element to be  visible first so i changed the inline style of the
+    target element to display:block; -->
+  </body>
+</html>

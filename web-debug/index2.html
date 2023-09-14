@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Container</title>
+    <style>
+      .centered--div {
+        border: 1px solid red;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+      }
+      .container {
+        margin: auto;
+        width: 50%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered--div">
+      <div class="container">
+        <h1>Centered Container</h1>
+        <p>This container should be centered on the page.</p>
+      </div>
+    </div>
+  </body>
+
+  <!-- Explanation -->
+  <!-- The code that we just had one div now it was covering 50% width of the viewport
+and there was a margin of auto it was centering the div in the horizontal direction not 
+vertically because height of the div from the top of the visible viewport was neglible so 
+it will not be able to center itself vertically -->
+
+  <!-- Corrected code -->
+  <!-- Just added a outer div which taking a height of 100vh which is viewport height and now it can 
+center the div inside the outerdiv  -->
+</html>
